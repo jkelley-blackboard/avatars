@@ -8,6 +8,7 @@
 
 This project provides both a command-line interface (CLI) and a Streamlit-based graphical user interface (GUI) for managing user avatars in Blackboard via the REST API. It supports bulk operations to **add** or **clear** avatars using images stored in a local folder. The tool is designed for administrators and developers working with Blackboard SaaS deployments.
 
+Please note that the process of adding or updating an avatar image to a user has two steps.  You must first make a POST request to /learn/api/public/v1/uploads to add the file to Blackboard and then use the ID number in the response to attach the uploaded file to the user record.
 ---
 
 ## Features
