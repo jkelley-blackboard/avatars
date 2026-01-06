@@ -99,15 +99,3 @@ This associates the uploaded file with the user’s avatar. The body shape (incl
 
 *   The **uploads** endpoint is documented as the way to stage files for subsequent REST operations: “Make a POST request to `/learn/api/public/v1/uploads`. **Use the ID number in the response** to further access the uploaded file.” [\[docs.anthology.com\]](https://docs.anthology.com/docs/blackboard/rest-apis/advanced/ultra-assignments), [\[blackboard.github.io\]](https://blackboard.github.io/rest-apis/learn/advanced/ultra-assignments)
 *   Community/API references for **Update User** show an `avatar` object that takes an `uploadId`, enabling you to wire the staged file to the user’s avatar. [\[postman.com\]](https://www.postman.com/insead-apis/workspace/higher-ed-rest-apis/request/270142-4b9cd952-d213-4b8a-915a-59589ea90698)
-*   Admin help continues to document avatar behavior, sizing, and the batch/approval workflow for institutions. [\[help.blackboard.com\]](https://help.blackboard.com/Learn/Administrator/Hosting/User_Management/Avatars)
-
-***
-
-If you’d like, I can put together a small script (Python or PowerShell) that:
-
-*   Reads a CSV of `userId, path_to_image`,
-*   Uploads each image,
-*   PATCHes each user’s avatar with the returned `uploadId`,
-*   Logs successes/failures with entitlement hints.
-
-What’s your deployment (SaaS or Managed/Self‑Hosted) and preferred language?
