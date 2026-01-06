@@ -133,4 +133,4 @@ Supported formats: `.jpg`, `.jpeg`, `.png`
 
 ## License
 
-This project is proprietary and intended for internal use by Anthology Inc.
+This project is provided as an example for clients to explore. It does not include support or warranty.  Use at your own risk.
